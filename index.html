@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -25,10 +26,31 @@
         img {
             width: 100px;
             height: 100px;
+            margin: 10px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
         h1 {
             font-size: 2em;
             color: white;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .logo-container {
+            text-align: center;
+        }
+        .logo-text {
+            color: white;
+            font-size: 1.2em;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -36,6 +58,24 @@
     <div class="container">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
         <h1>Hello, welcome to NextGenCoderVS's first website</h1>
+    </div>
+    <div class="logos">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" alt="Lua Logo">
+            <div class="logo-text">Lua</div>
+        </div>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+            <div class="logo-text">Python</div>
+        </div>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+            <div class="logo-text">HTML</div>
+        </div>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+            <div class="logo-text">JavaScript</div>
+        </div>
     </div>
 </body>
 </html>
